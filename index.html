@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algoritmo Semáforos</title>
+    <link rel="stylesheet" href="./estilos.css" />
+  </head>
+  <body>
+    <h1>Algoritmo Semáforos</h1>
+
+    <div class="container flex flex-row">
+      <div class="semaphore1 mx-auto">
+        <h2>Semáforo 1</h2>
+        <button onclick="iniciarSimulacion('Semaforo1')">Iniciar</button>
+
+        <table class="border border-black">
+          <tr>
+            <th class="border p-2 border-black">Proceso</th>
+            <th class="border p-2 border-black">Estado</th>
+            <th class="border p-2 border-black">Tiempo de ejecución</th>
+            <th class="border p-2 border-black">Tiempo de bloqueo</th>
+          </tr>
+          <tr id="wordRow1">
+            <td class="border p-2 border-black">Word</td>
+            <td id="wordState1" class="border p-2 border-black">Esperando</td>
+            <td id="wordRuntime1" class="border p-2 border-black">0</td>
+            <td id="wordBlockTime1" class="border p-2 border-black">0</td>
+          </tr>
+          <tr id="paintRow1">
+            <td class="border p-2 border-black">Paint</td>
+            <td id="paintState1" class="border p-2 border-black">Esperando</td>
+            <td id="paintRuntime1" class="border p-2 border-black">0</td>
+            <td id="paintBlockTime1" class="border p-2 border-black">0</td>
+          </tr>
+          <tr id="spotifyRow1">
+            <td class="border p-2 border-black">Spotify</td>
+            <td id="spotifyState1" class="border p-2 border-black">
+              Esperando
+            </td>
+            <td id="spotifyRuntime1" class="border p-2 border-black">0</td>
+            <td id="spotifyBlockTime1" class="border p-2 border-black">0</td>
+          </tr>
+        </table>
+
+        <h3>Estado en tiempo real</h3>
+        <table class="border border-black" id="realTimeTable1">
+          <tr>
+            <th class="border p-2 border-black">Proceso</th>
+            <th class="border p-2 border-black">Estado</th>
+          </tr>
+          <!-- Los datos en tiempo real se mostrarán aquí -->
+        </table>
+      </div>
+
+      <div class="semaphore2 mx-auto">
+        <h2>Semáforo 2</h2>
+        <button onclick="iniciarSimulacion('Semaforo2')">Iniciar</button>
+
+        <table class="border border-black">
+          <tr>
+            <th class="border p-2 border-black">Proceso</th>
+            <th class="border p-2 border-black">Estado</th>
+            <th class="border p-2 border-black">Tiempo de ejecución</th>
+            <th class="border p-2 border-black">Tiempo de bloqueo</th>
+          </tr>
+          <tr id="vscodeRow2">
+            <td class="border p-2 border-black">VSCode</td>
+            <td id="vscodeState2" class="border p-2 border-black">Esperando</td>
+            <td id="vscodeRuntime2" class="border p-2 border-black">0</td>
+            <td id="vscodeBlockTime2" class="border p-2 border-black">0</td>
+          </tr>
+          <tr id="edgeRow2">
+            <td class="border p-2 border-black">Edge</td>
+            <td id="edgeState2" class="border p-2 border-black">Esperando</td>
+            <td id="edgeRuntime2" class="border p-2 border-black">0</td>
+            <td id="edgeBlockTime2" class="border p-2 border-black">0</td>
+          </tr>
+          <tr id="fortniteRow2">
+            <td class="border p-2 border-black">Fortnite</td>
+            <td id="fortniteState2" class="border p-2 border-black">
+              Esperando
+            </td>
+            <td id="fortniteRuntime2" class="border p-2 border-black">0</td>
+            <td id="fortniteBlockTime2" class="border p-2 border-black">0</td>
+          </tr>
+        </table>
+
+        <h3>Estado en tiempo real</h3>
+        <table class="border border-black" id="realTimeTable2">
+          <tr>
+            <th class="border p-2 border-black">Proceso</th>
+            <th class="border p-2 border-black">Estado</th>
+          </tr>
+          <!-- Los datos en tiempo real se mostrarán aquí -->
+        </table>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
