@@ -9,45 +9,63 @@
   <body>
     <h1>Algoritmo Semáforos</h1>
 
-    <div class="container flex flex-row">
+    <style>
+      .container {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+      }
+
+      /*       .semaphore1 {
+        width: 50%;
+        height: 100%;
+      } */
+      .barra {
+        border-width: 1px;
+        padding: 0.5rem;
+        --tw-border-opacity: 1;
+        border-color: rgb(0 0 0 / var(--tw-border-opacity));
+      }
+    </style>
+    <div class="container">
       <div class="semaphore1 mx-auto">
         <h2>Semáforo 1</h2>
         <button onclick="iniciarSimulacion('Semaforo1')">Iniciar</button>
 
         <table class="border border-black">
           <tr>
-            <th class="border p-2 border-black">Proceso</th>
-            <th class="border p-2 border-black">Estado</th>
-            <th class="border p-2 border-black">Tiempo de ejecución</th>
-            <th class="border p-2 border-black">Tiempo de bloqueo</th>
+            <th class="barra">Proceso</th>
+            <th class="barra">Estado</th>
+            <th class="barra">Tiempo de ejecución</th>
+            <th class="barra">Tiempo de bloqueo</th>
           </tr>
           <tr id="wordRow1">
-            <td class="border p-2 border-black">Word</td>
-            <td id="wordState1" class="border p-2 border-black">Esperando</td>
-            <td id="wordRuntime1" class="border p-2 border-black">0</td>
-            <td id="wordBlockTime1" class="border p-2 border-black">0</td>
+            <td class="barra">Word</td>
+            <td id="wordState1" class="barra">Esperando</td>
+            <td id="wordRuntime1" class="barra">0</td>
+            <td id="wordBlockTime1" class="barra">0</td>
           </tr>
           <tr id="paintRow1">
-            <td class="border p-2 border-black">Paint</td>
-            <td id="paintState1" class="border p-2 border-black">Esperando</td>
-            <td id="paintRuntime1" class="border p-2 border-black">0</td>
-            <td id="paintBlockTime1" class="border p-2 border-black">0</td>
+            <td class="barra">Paint</td>
+            <td id="paintState1" class="barra">Esperando</td>
+            <td id="paintRuntime1" class="barra">0</td>
+            <td id="paintBlockTime1" class="barra">0</td>
           </tr>
           <tr id="spotifyRow1">
-            <td class="border p-2 border-black">Spotify</td>
-            <td id="spotifyState1" class="border p-2 border-black">
-              Esperando
-            </td>
-            <td id="spotifyRuntime1" class="border p-2 border-black">0</td>
-            <td id="spotifyBlockTime1" class="border p-2 border-black">0</td>
+            <td class="barra">Spotify</td>
+            <td id="spotifyState1" class="barra">Esperando</td>
+            <td id="spotifyRuntime1" class="barra">0</td>
+            <td id="spotifyBlockTime1" class="barra">0</td>
           </tr>
         </table>
 
         <h3>Estado en tiempo real</h3>
         <table class="border border-black" id="realTimeTable1">
           <tr>
-            <th class="border p-2 border-black">Proceso</th>
-            <th class="border p-2 border-black">Estado</th>
+            <th class="barra">Proceso</th>
+            <th class="barra">Estado</th>
           </tr>
           <!-- Los datos en tiempo real se mostrarán aquí -->
         </table>
@@ -59,38 +77,36 @@
 
         <table class="border border-black">
           <tr>
-            <th class="border p-2 border-black">Proceso</th>
-            <th class="border p-2 border-black">Estado</th>
-            <th class="border p-2 border-black">Tiempo de ejecución</th>
-            <th class="border p-2 border-black">Tiempo de bloqueo</th>
+            <th class="barra">Proceso</th>
+            <th class="barra">Estado</th>
+            <th class="barra">Tiempo de ejecución</th>
+            <th class="barra">Tiempo de bloqueo</th>
           </tr>
           <tr id="vscodeRow2">
-            <td class="border p-2 border-black">VSCode</td>
-            <td id="vscodeState2" class="border p-2 border-black">Esperando</td>
-            <td id="vscodeRuntime2" class="border p-2 border-black">0</td>
-            <td id="vscodeBlockTime2" class="border p-2 border-black">0</td>
+            <td class="barra">VSCode</td>
+            <td id="vscodeState2" class="barra">Esperando</td>
+            <td id="vscodeRuntime2" class="barra">0</td>
+            <td id="vscodeBlockTime2" class="barra">0</td>
           </tr>
           <tr id="edgeRow2">
-            <td class="border p-2 border-black">Edge</td>
-            <td id="edgeState2" class="border p-2 border-black">Esperando</td>
-            <td id="edgeRuntime2" class="border p-2 border-black">0</td>
-            <td id="edgeBlockTime2" class="border p-2 border-black">0</td>
+            <td class="barra">Edge</td>
+            <td id="edgeState2" class="barra">Esperando</td>
+            <td id="edgeRuntime2" class="barra">0</td>
+            <td id="edgeBlockTime2" class="barra">0</td>
           </tr>
           <tr id="fortniteRow2">
-            <td class="border p-2 border-black">Fortnite</td>
-            <td id="fortniteState2" class="border p-2 border-black">
-              Esperando
-            </td>
-            <td id="fortniteRuntime2" class="border p-2 border-black">0</td>
-            <td id="fortniteBlockTime2" class="border p-2 border-black">0</td>
+            <td class="barra">Fortnite</td>
+            <td id="fortniteState2" class="barra">Esperando</td>
+            <td id="fortniteRuntime2" class="barra">0</td>
+            <td id="fortniteBlockTime2" class="barra">0</td>
           </tr>
         </table>
 
         <h3>Estado en tiempo real</h3>
         <table class="border border-black" id="realTimeTable2">
           <tr>
-            <th class="border p-2 border-black">Proceso</th>
-            <th class="border p-2 border-black">Estado</th>
+            <th class="barra">Proceso</th>
+            <th class="barra">Estado</th>
           </tr>
           <!-- Los datos en tiempo real se mostrarán aquí -->
         </table>
