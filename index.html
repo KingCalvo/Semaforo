@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="./estilos.css" />
   </head>
   <body>
-    <h1>Algoritmo Semáforos</h1>
-
     <style>
       .container {
         width: 100%;
@@ -18,21 +16,36 @@
         flex-direction: row;
       }
 
-      /*       .semaphore1 {
-        width: 50%;
-        height: 100%;
-      } */
+      .sema {
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+      }
       .barra {
         border-width: 1px;
         padding: 0.5rem;
         --tw-border-opacity: 1;
         border-color: rgb(0 0 0 / var(--tw-border-opacity));
       }
+      .color {
+        background-color: darkblue;
+      }
     </style>
+    <h1
+      class="font-serif p-3 pb-9 pt-9 mt-0 fixed top-0 text-white left-0 w-full color z-10"
+    >
+      Algoritmo Semáforos
+    </h1>
+    <br /><br />
     <div class="container">
-      <div class="semaphore1 mx-auto">
+      <div class="semaphore1 sema">
         <h2>Semáforo 1</h2>
-        <button onclick="iniciarSimulacion('Semaforo1')">Iniciar</button>
+        <button
+          onclick="iniciarSimulacion('Semaforo1')"
+          class="bg-white text-black rounded-full border border-black px-4 py-2"
+        >
+          Iniciar
+        </button>
 
         <table class="border border-black">
           <tr>
@@ -71,9 +84,14 @@
         </table>
       </div>
 
-      <div class="semaphore2 mx-auto">
+      <div class="semaphore2 sema">
         <h2>Semáforo 2</h2>
-        <button onclick="iniciarSimulacion('Semaforo2')">Iniciar</button>
+        <button
+          onclick="iniciarSimulacion('Semaforo2')"
+          class="bg-white text-black rounded-full border border-black px-4 py-2"
+        >
+          Iniciar
+        </button>
 
         <table class="border border-black">
           <tr>
