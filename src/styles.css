@@ -40,11 +40,14 @@ html {
   text-transform: uppercase;
   margin: 0;
 }
-h2 {
+
+h2,
+h3 {
   text-align: center;
   padding: 10px 20px;
   font-size: 24px;
 }
+
 .btn {
   background-color: blue;
   color: white;
@@ -55,14 +58,56 @@ h2 {
   display: block;
   margin: auto;
 }
-h3 {
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 24px;
-}
-
 .centro {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Estilos de el semaforo de colores */
+.contenedor-principal {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.led1 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.led2 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.led3 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.led4 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.led5 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.led6 {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
 }

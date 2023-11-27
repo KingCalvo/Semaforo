@@ -53,17 +53,65 @@ function mostrarEstado(
     `${proceso.toLowerCase()}BlockTime${sem === semaforo1 ? "1" : "2"}`
   );
 
+  // Obtener el contenedor correspondiente
+  const container =
+    sem === semaforo1
+      ? document.getElementById("semaCont1")
+      : document.getElementById("semaCont2");
+
+  // Obtener los LEDs dentro del contenedor
+  const led1 = container.querySelector(".led1");
+  const led2 = container.querySelector(".led2");
+  const led3 = container.querySelector(".led3");
+  const led4 = container.querySelector(".led4");
+  const led5 = container.querySelector(".led5");
+  const led6 = container.querySelector(".led6");
+
+  // Función para establecer el color del LED según el estado
+  const setColor = (led, color) => {
+    led.style.backgroundColor = color;
+  };
+
+  // Actualiza la tabla
   stateElement.textContent = estado;
   runtimeElement.textContent = tiempoEjecucion;
   blockTimeElement.textContent = tiempoBloqueo;
 
-  // También actualizamos la tabla de estado en tiempo real
+  // Actualiza la tabla de estado en tiempo real
   actualizarEstadoReal(sem, proceso, estado);
+
+  // Actualiza los colores de los LEDs según el estado
+  switch (estado) {
+    case "Ejecutando":
+      setColor(sem === semaforo1 ? led1 : led4, "green");
+      setColor(sem === semaforo1 ? led2 : led5, "black");
+      setColor(sem === semaforo1 ? led3 : led6, "black");
+      break;
+    case "Bloqueado":
+      setColor(sem === semaforo1 ? led1 : led4, "black");
+      setColor(sem === semaforo1 ? led2 : led5, "yellow");
+      setColor(sem === semaforo1 ? led3 : led6, "black");
+      break;
+    case "Terminado":
+      setColor(sem === semaforo1 ? led1 : led4, "black");
+      setColor(sem === semaforo1 ? led2 : led5, "black");
+      setColor(sem === semaforo1 ? led3 : led6, "red");
+      break;
+    default:
+      /* todos los LEDs en negro */
+      setColor(led1, "black");
+      setColor(led2, "black");
+      setColor(led3, "black");
+      setColor(led4, "black");
+      setColor(led5, "black");
+      setColor(led6, "black");
+  }
 }
 
 function enqueueProceso(sem, proceso) {
   sem.queue.push(proceso);
 }
+
 function intentarAsignarRecurso(sem) {
   if (sem.value > 0 && sem.queue.length > 0) {
     const proceso = sem.queue.shift();
