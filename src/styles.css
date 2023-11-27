@@ -1,0 +1,68 @@
+body,
+html {
+  width: 100%;
+  margin: 0;
+}
+.cubo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%; /* Asegura que ocupe toda la altura disponible */
+}
+
+.sema {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(233, 15, 15);
+}
+.barra {
+  border-width: 1px;
+  padding: 0.5rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.color {
+  background-color: darkblue;
+}
+
+.banner {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para el h1 dentro del div */
+.banner h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+h2 {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+.btn {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+h3 {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
