@@ -2,19 +2,31 @@ body,
 html {
   width: 100%;
   margin: 0;
+  /* background-image: url("../assets/FondoB.webp"); */
+  background-color: #cffff1;
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("../assets/Kanit-SemiBold.ttf");
+
+  font-family: "Roboto Condensed";
+  src: url("../assets/RobotoCondensed-SemiBold.ttf");
 }
 .cubo {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(0, 0, 0);
+  /* border: 1px solid rgb(0, 0, 0); */
   width: 100%; /* Asegura que ocupe toda la altura disponible */
 }
 
 .sema {
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid rgb(233, 15, 15);
+  /*   border: 1px solid #009b94; */
+}
+.sema h2 {
+  font-family: "Roboto Condensed", sans-serif;
 }
 .barra {
   border-width: 1px;
@@ -27,7 +39,7 @@ html {
 }
 
 .banner {
-  background-color: darkblue;
+  background-color: #009b94;
   color: white;
   text-align: center;
   padding: 20px;
@@ -39,6 +51,7 @@ html {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
+  font-family: "Kanit", sans-serif;
 }
 
 h2,
@@ -49,7 +62,7 @@ h3 {
 }
 
 .btn {
-  background-color: blue;
+  background-color: #009b94;
   color: white;
   border-radius: 5px;
   padding: 10px 20px;
@@ -57,6 +70,7 @@ h3 {
   cursor: pointer;
   display: block;
   margin: auto;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .centro {
   display: flex;
@@ -69,6 +83,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid rgb(0, 0, 0);
+  background-color: gray;
 }
 
 .led1 {
@@ -110,4 +125,10 @@ h3 {
   width: 100px;
   height: 100px;
   margin: 10px;
+}
+
+.stick {
+  width: 8px;
+  height: 400px;
+  background-color: #009b94;
 }
