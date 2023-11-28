@@ -3,7 +3,9 @@ html {
   width: 100%;
   margin: 0;
   /* background-image: url("../assets/FondoB.webp"); */
-  background-color: #cffff1;
+  /* background-color: #cffff1; 
+  /* #e4fff9 */
+  background-color: #e4fff9;
 }
 @font-face {
   font-family: "Kanit";
@@ -11,6 +13,9 @@ html {
 
   font-family: "Roboto Condensed";
   src: url("../assets/RobotoCondensed-SemiBold.ttf");
+
+  font-family: "Days One";
+  src: url("../assets/DaysOne-Regular.ttf");
 }
 .cubo {
   display: flex;
@@ -43,15 +48,16 @@ html {
   color: white;
   text-align: center;
   padding: 20px;
+  border: 2px solid #007e78;
 }
 
 /* Estilos para el h1 dentro del div */
 .banner h1 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  font-family: "Kanit", sans-serif;
+  font-family: "Days One", sans-serif;
 }
 
 h2,
@@ -64,13 +70,19 @@ h3 {
 .btn {
   background-color: #009b94;
   color: white;
-  border-radius: 5px;
+  border: 2px solid #007e78;
+  border-radius: 10px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   display: block;
   margin: auto;
   font-family: "Roboto Condensed", sans-serif;
+  transition: background-color 0.3s, color 0.3s; /* Agregado: Transición suave al cambiar colores */
+}
+.btn:hover {
+  background-color: #007e78;
+  color: #fff;
 }
 .centro {
   display: flex;
@@ -83,45 +95,45 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid rgb(0, 0, 0);
-  background-color: gray;
+  background-color: #9fa3a9;
 }
 
 .led1 {
-  background-color: black;
+  background-color: #1f2124;
   width: 100px;
   height: 100px;
   margin: 10px;
 }
 
 .led2 {
-  background-color: black;
+  background-color: #1f2124;
   width: 100px;
   height: 100px;
   margin: 10px;
 }
 
 .led3 {
-  background-color: black;
+  background-color: #1f2124;
   width: 100px;
   height: 100px;
   margin: 10px;
 }
 .led4 {
-  background-color: black;
+  background-color: #1f2124;
   width: 100px;
   height: 100px;
   margin: 10px;
 }
 
 .led5 {
-  background-color: black;
+  background-color: #1f2124;
   width: 100px;
   height: 100px;
   margin: 10px;
 }
 
 .led6 {
-  background-color: black;
+  background-color: #1f2124;
   width: 100px;
   height: 100px;
   margin: 10px;
