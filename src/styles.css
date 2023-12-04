@@ -2,9 +2,6 @@ body,
 html {
   width: 100%;
   margin: 0;
-  /* background-image: url("../assets/FondoB.webp"); */
-  /* background-color: #cffff1; 
-  /* #e4fff9 */
   background-color: #e4fff9;
 }
 @font-face {
@@ -21,14 +18,12 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid rgb(0, 0, 0); */
   width: 100%; /* Asegura que ocupe toda la altura disponible */
 }
 
 .sema {
   margin-left: auto;
   margin-right: auto;
-  /*   border: 1px solid #009b94; */
 }
 .sema h2 {
   font-family: "Roboto Condensed", sans-serif;
@@ -103,6 +98,8 @@ h3 {
   width: 100px;
   height: 100px;
   margin: 10px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .led2 {
@@ -110,6 +107,8 @@ h3 {
   width: 100px;
   height: 100px;
   margin: 10px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .led3 {
@@ -117,19 +116,24 @@ h3 {
   width: 100px;
   height: 100px;
   margin: 10px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 .led4 {
   background-color: #1f2124;
   width: 100px;
   height: 100px;
   margin: 10px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
-
 .led5 {
   background-color: #1f2124;
   width: 100px;
   height: 100px;
   margin: 10px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .led6 {
@@ -137,10 +141,13 @@ h3 {
   width: 100px;
   height: 100px;
   margin: 10px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .stick {
   width: 8px;
-  height: 400px;
+  height: 650px;
   background-color: #009b94;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }

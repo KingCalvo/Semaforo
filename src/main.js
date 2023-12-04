@@ -18,6 +18,9 @@ function iniciarSimulacion(sem) {
     bloquearProceso(semaforo2, "Edge", 5, 2);
     bloquearProceso(semaforo2, "Fortnite", 2, 3);
   }
+  document.getElementById(
+    `startButton${sem === "Semaforo1" ? 1 : 2}`
+  ).disabled = true;
 }
 
 function ejecutarProceso(sem, proceso, tiempo, quantum) {
